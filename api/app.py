@@ -128,7 +128,7 @@ run_with_ngrok(app)
   
 @app.route("/")
 def home():
-    return render_template('index.html',data=symptoms)
+    return render_template('index.html',data=["toto","tata"])
 
 @app.route("/ASimpleRoute" ,methods=["POST"])
 def getMyRecommendation():
